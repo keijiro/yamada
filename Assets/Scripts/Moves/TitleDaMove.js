@@ -1,4 +1,5 @@
 #pragma strict
+#pragma downcast
 
 // タイトル画面の「田」の動き
 
