@@ -10,7 +10,7 @@ private var mixMode : int = 1;          // 現在のミックスモード
 
 // ゲーム開始メッセージの受信
 function OnGameStart() {
-    for (var source in sources) source.enabled = true;
+    for (var source in sources) source.Play();
 }
 
 // ゲーム終了メッセージの受信

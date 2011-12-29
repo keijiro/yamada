@@ -340,7 +340,7 @@ Transform:
   m_LocalRotation: {x: 0.310187, y: 0.343152, z: -0.056675, w: 0.884770}
   m_LocalPosition: {x: 0.000000, y: 0.000000, z: 0.000000}
   m_LocalScale: {x: 1.000000, y: 1.000000, z: 1.000000}
-  m_LocalEulerAnglesHint: {x: 36.000000, y: 45.000000, z: 8.000000}
+  m_LocalEulerAnglesHint: {x: 35.999985, y: 45.000031, z: 8.000046}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!4 &21
@@ -1145,10 +1145,10 @@ AudioSource:
     type: 2}
   m_PrefabInternal: {fileID: 81}
   m_GameObject: {fileID: 11}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: f5fdb28d55a12457bba70cc5064f790a, type: 1}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1.000000
   m_Pitch: 1.000000
   Loop: 1
@@ -1202,10 +1202,10 @@ AudioSource:
     type: 2}
   m_PrefabInternal: {fileID: 81}
   m_GameObject: {fileID: 11}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 8586158f0ced149459af909fab5c04da, type: 1}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1.000000
   m_Pitch: 1.000000
   Loop: 1
@@ -1259,10 +1259,10 @@ AudioSource:
     type: 2}
   m_PrefabInternal: {fileID: 81}
   m_GameObject: {fileID: 11}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 0ddfefe5b46544792acefcb3fe83f9dd, type: 1}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1.000000
   m_Pitch: 1.000000
   Loop: 1
@@ -1316,10 +1316,10 @@ AudioSource:
     type: 2}
   m_PrefabInternal: {fileID: 81}
   m_GameObject: {fileID: 11}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 771c7adf1a67241b1bd6128ab8519cb9, type: 1}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1.000000
   m_Pitch: 1.000000
   Loop: 1
@@ -1643,23 +1643,7 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 26}
-    m_Modifications:
-    - target: {fileID: 8200000, guid: cee6b31ecc2e64c1e80af203a6046539, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200002, guid: cee6b31ecc2e64c1e80af203a6046539, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200004, guid: cee6b31ecc2e64c1e80af203a6046539, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200006, guid: cee6b31ecc2e64c1e80af203a6046539, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cee6b31ecc2e64c1e80af203a6046539, type: 2}
   m_RootGameObject: {fileID: 11}
