@@ -2,8 +2,6 @@
 
 // 「山」のステータス管理
 
-var powerUpFx : GameObject;             // パワーアップエフェクト
-var powerDownFx : GameObject;           // パワーダウンエフェクト
 var explosionFx : GameObject;           // 死亡エフェクト
 var bonusFx : GameObject;               // パワーボーナスエフェクト
 
@@ -39,8 +37,6 @@ private function AddSubPower(delta : int) {
     // スケールに反映する。
     targetScale = 1.0 + (power - 1) * 0.3;
     BroadcastMessage(delta > 0 ? "Enlarge" : "Shrink", targetScale);
-    // エフェクトを発する。
-    Instantiate(delta < 0.0 ? powerDownFx : powerUpFx, transform.position, Quaternion.identity);
     // Game controller に伝える。
     var gameController = GameObject.FindWithTag("GameController");
     gameController.BroadcastMessage("ChangeYamaState", power);
