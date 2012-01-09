@@ -1505,8 +1505,8 @@ Animation:
   m_Animation: {fileID: 7400000, guid: bfbc19d6dbb9744aba9f1a6dab6c3925, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: bfbc19d6dbb9744aba9f1a6dab6c3925, type: 2}
-  - {fileID: 7400000, guid: 555c2457c8cd54a998080f6dad810b36, type: 2}
   - {fileID: 7400000, guid: 92b632c18043741759b9453c28e14837, type: 2}
+  - {fileID: 7400000, guid: 555c2457c8cd54a998080f6dad810b36, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -3252,8 +3252,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12f0991a0bc674a72b372893173fd2c9, type: 1}
   m_Name: 
-  normalSpeed: 3.200000
-  acceleration: 0.006000
+  normalSpeed: 3.600000
+  acceleration: 0.008000
 --- !u!114 &78
 MonoBehaviour:
   m_ObjectHideFlags: 0
