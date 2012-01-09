@@ -1,4 +1,5 @@
 #pragma strict
+#pragma downcast
 
 // オブジェクトを生成するスクリプト
 
