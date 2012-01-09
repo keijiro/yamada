@@ -2,8 +2,7 @@
 
 // 「山」のステータス管理
 
-var explosionFx : GameObject;           // 死亡エフェクト
-var bonusFx : GameObject;               // パワーボーナスエフェクト
+var explosionPrefab : GameObject;
 
 private var power = 1;                  // 現状の山パワー
 private var targetScale : float = 1.0;  // スケールのターゲット値
@@ -12,8 +11,8 @@ private var targetScale : float = 1.0;  // スケールのターゲット値
 function IncrementPower() {
     if (power == 3) {
         // フルパワーボーナス。
-        Instantiate(bonusFx, transform.position, Quaternion.identity);
-        BroadcastMessage("Enlarge", targetScale);
+        BroadcastMessage("Bonused");
+        BroadcastMessage("InvokeEffect", "Bonus");
         GameObject.FindWithTag("GameController").BroadcastMessage("AddScore", "Bonus");
     } else {
         AddSubPower(1);
@@ -24,7 +23,7 @@ function IncrementPower() {
 function DecrementPower() {
     if (power == 0) {
         // 死亡処理。
-        Instantiate(explosionFx, transform.position, Quaternion.identity);
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
         GameObject.FindWithTag("GameController").BroadcastMessage("OnGameEnd");
         Destroy(gameObject);
     } else {
@@ -37,6 +36,7 @@ private function AddSubPower(delta : int) {
     // スケールに反映する。
     targetScale = 1.0 + (power - 1) * 0.3;
     BroadcastMessage(delta > 0 ? "Enlarge" : "Shrink", targetScale);
+    BroadcastMessage("InvokeEffect", delta > 0 ? "PowerUp" : "PowerDown");
     // Game controller に伝える。
     var gameController = GameObject.FindWithTag("GameController");
     gameController.BroadcastMessage("ChangeYamaState", power);

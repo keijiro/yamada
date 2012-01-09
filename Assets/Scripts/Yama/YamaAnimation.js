@@ -19,6 +19,10 @@ function Shrink(scale : float) {
     timer = energy;
     enlarge = false;
 }
+function Bonused() {
+    timer = energy;
+    enlarge = true;
+}
 
 function Update() {
     if (PauseHandler.paused) {
