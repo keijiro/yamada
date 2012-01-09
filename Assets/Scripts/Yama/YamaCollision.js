@@ -13,18 +13,12 @@ function Awake() {
     originalColliderRadius = GetComponent.<SphereCollider>().radius;
 }
 
-// 拡大・縮小メッセージの処理
-function Enlarge(scale : float) {
-    Shrink(scale);
-}
-function Shrink(scale : float) {
-    GetComponent.<SphereCollider>().radius = originalColliderRadius * scale;
-}
-
 function OnTriggerEnter(other : Collider) {
     if (other.gameObject.tag == "Yama") {
         // 山ゲット。
-        GetComponent.<YamaStatus>().IncrementPower();
+        var newScale = GetComponent.<YamaStatus>().IncrementPowerAndGetScale();
+        // コリジョンのスケール変更
+        GetComponent.<SphereCollider>().radius = originalColliderRadius * newScale;
         // タグの書き換えによる再衝突防止。
         other.gameObject.tag = "Untagged";
         // スルー化を開始する。
@@ -32,7 +26,9 @@ function OnTriggerEnter(other : Collider) {
         thruFlag = true;
     } else if (other.gameObject.tag == "Da" && !thruFlag) {
         // 田に衝突。
-        GetComponent.<YamaStatus>().DecrementPower();
+        newScale = GetComponent.<YamaStatus>().DecrementPowerAndGetScale();
+        // コリジョンのスケール変更
+        GetComponent.<SphereCollider>().radius = originalColliderRadius * newScale;
         // タグの書き換えによる再衝突防止。
         other.gameObject.tag = "Untagged";
         // スルー化を開始する。

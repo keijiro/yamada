@@ -288,7 +288,10 @@ GameObject:
   - 4: {fileID: 31}
   - 33: {fileID: 52}
   - 23: {fileID: 45}
-  - 114: {fileID: 78}
+  - 111: {fileID: 38}
+  - 114: {fileID: 41}
+  - 114: {fileID: 46}
+  - 114: {fileID: 49}
   m_Layer: 8
   m_Name: Renderer
   m_TagString: Untagged
@@ -455,8 +458,8 @@ Transform:
   m_Children:
   - {fileID: 24}
   - {fileID: 1235038911}
+  - {fileID: 507198523}
   - {fileID: 19}
-  - {fileID: 31}
   - {fileID: 27}
   m_Father: {fileID: 0}
 --- !u!4 &30
@@ -482,7 +485,7 @@ Transform:
   m_LocalScale: {x: 1.000000, y: 1.000000, z: 1.000000}
   m_LocalEulerAnglesHint: {x: 0.000000, y: 0.000000, z: 0.000000}
   m_Children: []
-  m_Father: {fileID: 29}
+  m_Father: {fileID: 507198523}
 --- !u!4 &32
 Transform:
   m_ObjectHideFlags: 0
@@ -1636,6 +1639,25 @@ ParticleAnimator:
   damping: 1.000000
   stopSimulation: 0
   autodestruct: 0
+--- !u!111 &38
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 61d9b87c14a4e45c09862bae5b276af2, type: 2}
+  - {fileID: 7400000, guid: d4ccc3b59d970440583c3d22a1fc6be6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0.000000, y: 0.000000, z: 0.000000}
+    m_Extent: {x: 0.000000, y: 0.000000, z: 0.000000}
 --- !u!15 &39
 EllipsoidParticleEmitter:
   m_ObjectHideFlags: 0
@@ -1690,6 +1712,19 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 0.200000, y: 0.200000, z: 0.000000}
   m_MinEmitterRange: 0.000000
+--- !u!114 &41
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de322001c3ba541809ffe2493b253e4e, type: 1}
+  m_Name: 
+  effectName: PowerUp
+  particleEmission: 0
+  animationName: PowerUp
 --- !u!15 &42
 EllipsoidParticleEmitter:
   m_ObjectHideFlags: 0
@@ -1783,6 +1818,19 @@ Renderer:
   m_LightProbeAnchor: {fileID: 0}
   m_UseLightProbes: 0
   m_ScaleInLightmap: 1.000000
+--- !u!114 &46
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de322001c3ba541809ffe2493b253e4e, type: 1}
+  m_Name: 
+  effectName: Bonus
+  particleEmission: 0
+  animationName: PowerUp
 --- !u!26 &47
 ParticleRenderer:
   m_ObjectHideFlags: 0
@@ -1839,6 +1887,19 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1.000000
+--- !u!114 &49
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de322001c3ba541809ffe2493b253e4e, type: 1}
+  m_Name: 
+  effectName: PowerDown
+  particleEmission: 0
+  animationName: PowerDown
 --- !u!26 &50
 ParticleRenderer:
   m_ObjectHideFlags: 0
@@ -2471,17 +2532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f0991a0bc674a72b372893173fd2c9, type: 1}
   m_Name: 
   normalSpeed: 3.200000
---- !u!114 &78
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 17}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea39c955c1674f23922e24c8d06300c, type: 1}
-  m_Name: 
-  energy: 0.500000
 --- !u!114 &79
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3589,6 +3639,34 @@ ParticleSystemRenderer:
   m_SortingFudge: 0.000000
   m_SortMode: 0
   m_Mesh: {fileID: 4300000, guid: 880eb74fdfb12436ca8ee13f3577e8c1, type: 3}
+--- !u!1 &507198522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 507198523}
+  m_Layer: 0
+  m_Name: Scaler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &507198523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 507198522}
+  m_LocalRotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  m_LocalPosition: {x: 0.000000, y: 0.000000, z: 0.000000}
+  m_LocalScale: {x: 1.000000, y: 1.000000, z: 1.000000}
+  m_LocalEulerAnglesHint: {x: 0.000000, y: 0.000000, z: 0.000000}
+  m_Children:
+  - {fileID: 31}
+  m_Father: {fileID: 29}
 --- !u!1 &634296017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4692,6 +4770,7 @@ MonoBehaviour:
   m_Name: 
   effectName: Bonus
   particleEmission: 3
+  animationName: 
 --- !u!1 &773381444
 GameObject:
   m_ObjectHideFlags: 0
@@ -4798,6 +4877,7 @@ MonoBehaviour:
   m_Name: 
   effectName: PowerDown
   particleEmission: 1
+  animationName: 
 --- !u!198 &811075456
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -9162,6 +9242,7 @@ MonoBehaviour:
   m_Name: 
   effectName: PowerUp
   particleEmission: 20
+  animationName: 
 --- !u!82 &1723190552
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10304,6 +10385,7 @@ MonoBehaviour:
   m_Name: 
   effectName: Bonus
   particleEmission: 20
+  animationName: 
 --- !u!82 &1963891118
 AudioSource:
   m_ObjectHideFlags: 0
