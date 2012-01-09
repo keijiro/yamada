@@ -2,51 +2,60 @@
 
 // オブジェクトを生成するスクリプト
 
-var prefabYama : GameObject;        // 山
-var prefabDa : GameObject;          // 田
+var prefabYama : GameObject;    // 山
+var prefabDa : GameObject;      // 田
 
-var minInterval : float = 0.65;     // 最小インターバル
-var maxInterval : float = 1.5;      // 最大インターバル
-var yamaRate : float = 0.14;        // 「山」を出す確率
-var width : float = 2.0;            // 生成位置の幅
-var levelUpRate : float = 0.006;    // 難易度向上の速度
+var width : float = 2.0;        // 生成位置の幅
 
-private var scroller : ScrollController; // ScrollController への参照
+// アニメーションで制御するパラメーター
+@HideInInspector var interval : float;  // 生成インターバル
+@HideInInspector var phase : float;     // 生成フェーズ（動きを決定する）
+@HideInInspector var yamaRate : float;  // 「山」を出す確率
 
-private var leftToSpawn : float;    // 次の生成までの残りスクロール量
-private var level : float;          // 難易度パラメーター
+private var scroller : ScrollController;    // ScrollController への参照
+private var leftToSpawn : float;            // 次の生成までの残りスクロール量
+
+function Awake() {
+    scroller = FindObjectOfType(ScrollController);
+}
 
 // ゲーム開始メッセージの処理
 function OnGameStart() {
     enabled = true;
-}
-
-function Start() {
-    scroller = FindObjectOfType(ScrollController);
+    animation.PlayQueued("GeneratorCurve1");
+    animation.PlayQueued("GeneratorCurve2");
+    animation.PlayQueued("GeneratorCurve3");
 }
 
 function Update() {
-    // レベルタイマー。
-    level += scroller.GetSpeed() * Timekeeper.delta * levelUpRate;
+    // アニメーションの速度をスクロール速度と対応させる。
+    for (var state : AnimationState in animation) {
+        state.speed = scroller.GetSpeed();
+    }
     // 生成タイマー。
     leftToSpawn -= scroller.GetSpeed() * Timekeeper.delta;
     if (leftToSpawn < 0.0) {
         // 山か田か生成。
-        if (Random.value < yamaRate * (1.0 - 0.07 * level)) {
+        if (Random.value < yamaRate) {
             Instantiate(prefabYama, NewPosition(), Quaternion.identity);
         } else {
             CreateDa(NewPosition());
         }
-        // 次の生成までの時間を算出。
-        leftToSpawn = Mathf.Lerp(maxInterval, minInterval, level - Mathf.Floor(level) + 0.1 * level);
+        // 次の生成までの時間を設定。
+        leftToSpawn = interval;
     }
 }
 
 // 「田」の生成
 function CreateDa(position : Vector3) : GameObject {
-    var da = Instantiate(prefabDa, position, Quaternion.AngleAxis(Random.Range(-30.0, 30.0), Vector3.up) * Quaternion.AngleAxis(Random.Range(-20.0, 20.0), Vector3.forward)) as GameObject;
-    // 動きを決定（レベル4以降はランダムに分布）。
-    var move = (level < 4.0) ? Mathf.FloorToInt(level) : Random.Range(0, 4);
+    // ランダムな角度を生成する。
+    var rotation =
+        Quaternion.AngleAxis(Random.Range(-30.0, 30.0), Vector3.up) *
+        Quaternion.AngleAxis(Random.Range(-20.0, 20.0), Vector3.forward);
+    // 「田」をインスタンス化。
+    var da = Instantiate(prefabDa, position, rotation) as GameObject;
+    // フェーズから動きを決定。
+    var move = (phase < 4.0) ? Mathf.FloorToInt(phase) : Random.Range(0, 4);
     // 決定した動きに対応するコンポーネントを有効にする。
     if (move == 1) {
         da.GetComponent.<VerticalMove>().enabled = true;

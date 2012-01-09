@@ -2,14 +2,16 @@
 
 // スクロール速度の制御
 
-var normalSpeed : float = 4.0;      // 標準速度
+var normalSpeed : float = 4.0;          // 標準速度
+var acceleration : float = 1.0 / 60;    // 加速度
 
-private var speed : float;          // 現在の速度
+private var speed : float;          // 現在の速度（加速度を考慮しない）
+private var elapsed : float;        // 経過時間
 private var targetSpeed : float;    // 目標移動速度
 
 // スクロール速度の取得
 function GetSpeed() : float{
-    return speed;
+    return speed + acceleration * elapsed;
 }
 
 // 山ステート変更メッセージの受信
@@ -30,6 +32,8 @@ function Start() {
 }
 
 function Update() {
-    // 紙数関数補間で目標速度に近づける。
+    // 経過時間の計測。
+    elapsed += Timekeeper.delta;
+    // 指数関数補間で目標速度に近づける。
     speed = targetSpeed - (targetSpeed - speed) * Mathf.Exp(-4.0 * Timekeeper.delta); 
 }

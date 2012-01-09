@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GeneratorCurve1
+  serializedVersion: 3
+  m_Compressed: 0
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 2.503650
+        inSlope: -0.015273
+        outSlope: -0.015273
+        tangentMode: 10
+      - time: 102.199997
+        value: 0.942796
+        inSlope: -0.015273
+        outSlope: 0.633912
+        tangentMode: 21
+      - time: 104.733330
+        value: 2.548707
+        inSlope: 0.633912
+        outSlope: -0.015503
+        tangentMode: 21
+      - time: 207.399994
+        value: 0.957066
+        inSlope: -0.015503
+        outSlope: 1.068500
+        tangentMode: 21
+      - time: 208.883331
+        value: 2.542012
+        inSlope: 1.068500
+        outSlope: -0.013910
+        tangentMode: 21
+      - time: 316.216675
+        value: 1.049054
+        inSlope: -0.013910
+        outSlope: 0.572689
+        tangentMode: 21
+      - time: 318.766663
+        value: 2.509404
+        inSlope: 0.572689
+        outSlope: -0.014635
+        tangentMode: 21
+      - time: 419.466675
+        value: 1.035618
+        inSlope: -0.014635
+        outSlope: 0.000000
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: interval
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 0.000000
+        inSlope: 0.020000
+        outSlope: inf
+        tangentMode: 25
+      - time: 106.000000
+        value: 1.000000
+        inSlope: 0.009465
+        outSlope: 0.009465
+        tangentMode: 10
+      - time: 211.316666
+        value: 2.000000
+        inSlope: inf
+        outSlope: inf
+        tangentMode: 31
+      - time: 320.433319
+        value: 3.000000
+        inSlope: inf
+        outSlope: inf
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: phase
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 0.213720
+        inSlope: -0.000524
+        outSlope: -0.000348
+        tangentMode: 21
+      - time: 421.183319
+        value: 0.067265
+        inSlope: -0.000348
+        outSlope: -0.000524
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: yamaRate
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 50.000000
+        value: 0.000000
+        inSlope: 0.000000
+        outSlope: 0.000000
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_PlayAutomatically
+    path: 
+    classID: 111
+    script: {fileID: 0}
+  m_SampleRate: 60.000000
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0.000000, y: 0.000000, z: 0.000000}
+    m_Extent: {x: 0.000000, y: 0.000000, z: 0.000000}
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 2.503650
+        inSlope: -0.015273
+        outSlope: -0.015273
+        tangentMode: 10
+      - time: 102.199997
+        value: 0.942796
+        inSlope: -0.015273
+        outSlope: 0.633912
+        tangentMode: 21
+      - time: 104.733330
+        value: 2.548707
+        inSlope: 0.633912
+        outSlope: -0.015503
+        tangentMode: 21
+      - time: 207.399994
+        value: 0.957066
+        inSlope: -0.015503
+        outSlope: 1.068500
+        tangentMode: 21
+      - time: 208.883331
+        value: 2.542012
+        inSlope: 1.068500
+        outSlope: -0.013910
+        tangentMode: 21
+      - time: 316.216675
+        value: 1.049054
+        inSlope: -0.013910
+        outSlope: 0.572689
+        tangentMode: 21
+      - time: 318.766663
+        value: 2.509404
+        inSlope: 0.572689
+        outSlope: -0.014635
+        tangentMode: 21
+      - time: 419.466675
+        value: 1.035618
+        inSlope: -0.014635
+        outSlope: 0.000000
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: interval
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 0.000000
+        inSlope: 0.020000
+        outSlope: inf
+        tangentMode: 25
+      - time: 106.000000
+        value: 1.000000
+        inSlope: 0.009465
+        outSlope: 0.009465
+        tangentMode: 10
+      - time: 211.316666
+        value: 2.000000
+        inSlope: inf
+        outSlope: inf
+        tangentMode: 31
+      - time: 320.433319
+        value: 3.000000
+        inSlope: inf
+        outSlope: inf
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: phase
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.000000
+        value: 0.213720
+        inSlope: -0.000524
+        outSlope: -0.000348
+        tangentMode: 21
+      - time: 421.183319
+        value: 0.067265
+        inSlope: -0.000348
+        outSlope: -0.000524
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: yamaRate
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: fd85cd10ec9f642a08a5d0713984bf92, type: 1}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 50.000000
+        value: 0.000000
+        inSlope: 0.000000
+        outSlope: 0.000000
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_PlayAutomatically
+    path: 
+    classID: 111
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events: []
