@@ -18,10 +18,10 @@ function ChangeYamaState(level : int) {
     targetSpeed = normalSpeed * (1.0 + level * 0.2);
     // 最高レベルのときにエフェクトを有効化する。
     if (level == 3) {
-        particleEmitter.worldVelocity.y = -targetSpeed;
-        particleEmitter.emit = true;
+        particleSystem.startSpeed = targetSpeed;
+        particleSystem.enableEmission = true;
     } else {
-        particleEmitter.emit = false;
+        particleSystem.enableEmission = false;
     }
 }
 
