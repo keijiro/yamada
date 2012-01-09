@@ -22,7 +22,6 @@ function OnTriggerEnter(other : Collider) {
         // タグの書き換えによる再衝突防止。
         other.gameObject.tag = "Untagged";
         // スルー化を開始する。
-        BroadcastMessage("OnEnableThru", true);
         thruFlag = true;
     } else if (other.gameObject.tag == "Da" && !thruFlag) {
         // 田に衝突。
@@ -32,7 +31,6 @@ function OnTriggerEnter(other : Collider) {
         // タグの書き換えによる再衝突防止。
         other.gameObject.tag = "Untagged";
         // スルー化を開始する。
-        BroadcastMessage("OnEnableThru", false);
         thruFlag = true;
     }
     collCounter++;
@@ -48,7 +46,6 @@ function OnTriggerStay(other : Collider) {
 function OnTriggerExit(other : Collider) {
     // 何も触れていない状態になったとき、スルー化を終了する。
     if (--collCounter == 0) {
-        BroadcastMessage("OnDisableThru");
         thruFlag = false;
     }
 }

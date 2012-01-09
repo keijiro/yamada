@@ -11,6 +11,7 @@ function InvokeEffect(name : String) {
         }
         if (animationName) {
             animation.Play(animationName);
+            animation.Rewind();
         }
         if (audio) audio.Play();
     }
