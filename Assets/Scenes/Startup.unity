@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+Scene:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_QueryMode: 1
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    viewCellSize: 1.000000
+    bakeMode: 2
+    memoryUsage: 10485760
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: 0.500000, g: 0.500000, b: 0.500000, a: 1.000000}
+  m_FogMode: 3
+  m_FogDensity: 0.010000
+  m_LinearFogStart: 0.000000
+  m_LinearFogEnd: 300.000000
+  m_AmbientLight: {r: 0.200000, g: 0.200000, b: 0.200000, a: 1.000000}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.500000
+  m_FlareStrength: 1.000000
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+GameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50.000000
+    m_LastUsedResolution: 0.000000
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1.000000
+    m_BounceIntensity: 1.000000
+    m_SkyLightColor: {r: 0.860000, g: 0.930000, b: 1.000000, a: 1.000000}
+    m_SkyLightIntensity: 0.000000
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: 0.050000
+    m_FinalGatherGradientThreshold: 0.000000
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0.000000
+    m_AOMaxDistance: 0.100000
+    m_AOContrast: 1.000000
+    m_LODSurfaceMappingDistance: 1.000000
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: 0.400000
+    agentHeight: 1.800000
+    agentSlope: 45.000000
+    agentClimb: 0.400000
+    ledgeDropHeight: 0.000000
+    maxJumpAcrossDistance: 0.000000
+    accuratePlacement: 0
+    minRegionArea: 2.000000
+    tileEdgeLength: 100.000000
+  m_NavMesh: {fileID: 0}
+--- !u!1 &411121792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 411121793}
+  - 20: {fileID: 411121794}
+  - 114: {fileID: 411121795}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411121793
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411121792}
+  m_LocalRotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+  m_LocalPosition: {x: 0.000000, y: 0.000000, z: 0.000000}
+  m_LocalScale: {x: 1.000000, y: 1.000000, z: 1.000000}
+  m_LocalEulerAnglesHint: {x: 0.000000, y: 0.000000, z: 0.000000}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!20 &411121794
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411121792}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 0.019608}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0.000000
+    y: 0.000000
+    width: 1.000000
+    height: 1.000000
+  near clip plane: 0.300000
+  far clip plane: 1000.000000
+  field of view: 60.000000
+  orthographic: 1
+  orthographic size: 100.000000
+  m_Depth: -1.000000
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+--- !u!114 &411121795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411121792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdc601e100844b22b515e3f6e2f2eb2, type: 1}
+  m_Name: 

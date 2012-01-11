@@ -18,6 +18,8 @@ function OnGameEnd() {
     var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
     scoreText = score.ToString("#,##0");
     rankName = GetRankName(score);
+    // リーダーボードへ点数を送信。
+    Social.ReportScore(score, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
     // フェードイン。
     while (param < 1.0) {
         param = Mathf.Min(param + Timekeeper.delta * 6.0, 1.0);
@@ -31,7 +33,7 @@ function OnGameEnd() {
         yield;
     }
     // ロード発行。
-    Application.LoadLevel(0);
+    Application.LoadLevel(1);
 }
 
 function OnGUI() {
