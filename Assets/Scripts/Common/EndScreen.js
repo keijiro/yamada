@@ -3,7 +3,9 @@
 // 終了画面
 
 var skin : GUISkin;
+var bgTexture : Texture2D;
 
+private var param : float;      // 表示遷移パラメーター
 private var scoreText : String; // 点数表示の文字列
 private var rankName : String;  // ランク文字列
 
@@ -16,21 +18,33 @@ function OnGameEnd() {
     var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
     scoreText = score.ToString("#,##0");
     rankName = GetRankName(score);
-    // ちょっと間を空けてからタップ待ち。
-    yield WaitForSeconds(1.0);
+    // フェードイン。
+    while (param < 1.0) {
+        param = Mathf.Min(param + Timekeeper.delta * 6.0, 1.0);
+        yield;
+    }
+    // タップ待ち。
     while (!Input.GetButtonUp("Fire1")) yield;
+    // フェードアウト。
+    while (param < 2.0) {
+        param = Mathf.Min(param + Timekeeper.delta * 6.0, 2.0);
+        yield;
+    }
     // ロード発行。
     Application.LoadLevel(0);
 }
 
 function OnGUI() {
     if (scoreText == null) return;
-
     var sw = Screen.width;
     var sh = Screen.height;
     var scale = Config.GetUIScale();
-
+    // 黒塗り。
+    GUI.color = Color(1, 1, 1, Mathf.Min(param * 0.75, 1.0));
+    GUI.DrawTexture(Rect(0, 0, sw, sh), bgTexture);
+    // テキスト表示。
     GUI.skin = skin;
+    GUI.color = Color(1, 1, 1, param > 1.0 ? 2.0 - param : param);
     GUIUtility.ScaleAroundPivot(Vector2(1.0 / scale, 1.0 / scale), Vector2.zero);
     GUI.Label(Rect(0, sh * scale * 0.25, sw * scale, sh * scale * 0.5), "ゲームオーバー\n\n\n" + scoreText + " てん\n\n\n" + rankName);
 }

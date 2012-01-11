@@ -3174,6 +3174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856d0a76c01004ab7a8deb0e1e364a27, type: 1}
   m_Name: 
   skin: {fileID: 11400000, guid: 13390b3abab7f4d919e373a682fcd879, type: 2}
+  bgTexture: {fileID: 2800000, guid: fd2469343e9a2405ab1520671fef54c7, type: 1}
 --- !u!114 &69
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,6 +3186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ee82679239a48a28d4c05434c5c436, type: 1}
   m_Name: 
   skin: {fileID: 11400000, guid: 13390b3abab7f4d919e373a682fcd879, type: 2}
+  bgTexture: {fileID: 2800000, guid: fd2469343e9a2405ab1520671fef54c7, type: 1}
 --- !u!114 &72
 MonoBehaviour:
   m_ObjectHideFlags: 0
