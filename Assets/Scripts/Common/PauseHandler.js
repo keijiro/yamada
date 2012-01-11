@@ -19,7 +19,7 @@ function ResumeGame() {
 
 function OnApplicationPause(pause : boolean) {
     // アプリケーションの動作がバックグラウンドに入った場合にポーズを発動する。
-    if (!paused && pause) {
+    if (enabled && !paused && pause) {
         SendMessage("PauseGame");
         paused = true;
     }
