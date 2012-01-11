@@ -3206,8 +3206,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bc1f82f6a8c7406b93984a866d430b1, type: 1}
   m_Name: 
-  skin: {fileID: 11400000, guid: 13390b3abab7f4d919e373a682fcd879, type: 2}
-  scoreUpSpeed: 2000.000000
 --- !u!114 &74
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3348,7 +3346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ba36f7567d34dcdad3ed34c5b40d44, type: 1}
   m_Name: 
   skin: {fileID: 11400000, guid: 13390b3abab7f4d919e373a682fcd879, type: 2}
-  black: {fileID: 2800000, guid: 4d6a5fd70ed7b44ec846291f68835554, type: 1}
+  black: {fileID: 2800000, guid: fd2469343e9a2405ab1520671fef54c7, type: 1}
 --- !u!114 &85
 MonoBehaviour:
   m_ObjectHideFlags: 0

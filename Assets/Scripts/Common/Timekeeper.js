@@ -2,12 +2,14 @@
 
 // 時間の管理
 
-static var delta : float; // Update 増分
+static var delta : float;   // Update 増分
+static var elapsed : float; // 開始からの経過時間
 
 private var paused : boolean;
 
 function Awake() {
     Application.targetFrameRate = 60;
+    elapsed = 0;
 }
 
 // ポーズ操作
@@ -29,4 +31,5 @@ function Update() {
         delta = Time.smoothDeltaTime;
 #endif
     }
+    elapsed += delta;
 }
