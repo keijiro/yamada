@@ -274,8 +274,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 32}
   - 20: {fileID: 43}
-  - 92: {fileID: 61}
-  - 124: {fileID: 64}
   - 81: {fileID: 54}
   m_Layer: 0
   m_Name: Main Camera
@@ -3037,13 +3035,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!92 &61
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 18}
-  m_Enabled: 1
 --- !u!108 &62
 Light:
   m_ObjectHideFlags: 0
@@ -3114,13 +3105,6 @@ Light:
   m_ShadowAngle: 0.000000
   m_IndirectIntensity: 1.000000
   m_AreaSize: {x: 1.000000, y: 1.000000}
---- !u!124 &64
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 18}
-  m_Enabled: 1
 --- !u!135 &65
 SphereCollider:
   m_ObjectHideFlags: 0
