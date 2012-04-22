@@ -1,35 +1,31 @@
 #pragma strict
 
-// 「山」の操作系
+var maxVelocity = 6.0;
+var sensibility = 15.0;
+var inputTrim = 0.4;
+var xRange = 1.5;
 
-var maxVelocity = 6.0;      // 最大横移動速度
-var sensibility = 15.0;     // 操作の感度
-var inputTrim = 0.6;        // 入力値（加速度）のトリム
-var xRange = 1.5;           // 横移動幅
+private var normalizedVelocity : float;
+private var gameStarted : boolean;
 
-private var normalizedVelocity : float;     // 正規化された速度値
-private var downFlag : boolean;
-
-// 指数関数を使ったフレームレート非依存イーズアウト関数
+// Exponential easing-out function.
 static private function EaseOut(current : float, target : float, coeff : float) : float {
     return target - (target - current) * Mathf.Exp(coeff * Timekeeper.delta); 
 }
 
-// ゲーム開始メッセージの処理
 function OnGameStart() {
-    downFlag = true;
+    gameStarted = true;
 }
 
 function Update() {
-    // 傾きをトリムしつつ取得する。
+    // Get an input and trim it.
 #if UNITY_IPHONE
     var input = Input.acceleration.x;
 #else
     var input = -Input.acceleration.y;
 #endif
     input = Mathf.Clamp(input / inputTrim, -1.0, 1.0);
-    // 傾き値をターゲットとして速度をイーズアウトで近づける。
-    // 左右のリミットを越えた入力の場合は減速する。
+    // Update the velocity toward the input value.
     if (transform.localPosition.x < -xRange && input < 0.0) {
         normalizedVelocity = EaseOut(normalizedVelocity, 0.0, -20);
     } else if (transform.localPosition.x >  xRange && input > 0.0) {
@@ -37,11 +33,11 @@ function Update() {
     } else {
         normalizedVelocity = EaseOut(normalizedVelocity, input, -sensibility);
     }
-    // 速度に応じて左右方向に移動する。
+    // Update the position with the velocity.
     transform.localPosition.x += normalizedVelocity * maxVelocity * Timekeeper.delta;
-    // ゲーム開始後は画面下方向に移動する。
-    if (downFlag) transform.localPosition.y = EaseOut(transform.localPosition.y, -2.0, -0.4);
-    // 速度に応じて回転する（首を振る）。 
+    // Going down to the bottom of the screen while playing the game.
+    if (gameStarted) transform.localPosition.y = EaseOut(transform.localPosition.y, -2.0, -0.4);
+    // Yaw the body with the velocity.
     transform.localRotation =
         Quaternion.AngleAxis(-13.0 * normalizedVelocity, Vector3.forward) *
         Quaternion.AngleAxis(-50.0 * normalizedVelocity, Vector3.up);

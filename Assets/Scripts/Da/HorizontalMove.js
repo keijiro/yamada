@@ -1,11 +1,9 @@
 #pragma strict
 
-// 動き制御：左右への動き
+var speed : float = 0.3;
+var angle : float = 10.0;
 
-var speed : float = 0.3;    // 左右への移動速度
-var angle : float = 10.0;   // 傾き角度
-
-private var vx : float;     // 実際の速度値
+private var vx : float;
 
 function Start() {
     var sign = Random.value < 0.5 ? -1.0 : 1.0;

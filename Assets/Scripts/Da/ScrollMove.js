@@ -1,7 +1,5 @@
 #pragma strict
 
-// 動き制御：スクロールの適用
-
 private var scroll : ScrollController;
 
 function Start() {
