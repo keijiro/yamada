@@ -1,58 +1,70 @@
 #pragma strict
 
-// 終了画面
-
 var skin : GUISkin;
 var bgTexture : Texture2D;
 
-private var param : float;      // 表示遷移パラメーター
-private var scoreText : String; // 点数表示の文字列
-private var rankName : String;  // ランク文字列
+private var param : float;
+private var text : String;
 
-// ゲーム終了メッセージの処理
+function Start() {
+    var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
+    // Make text.
+    if (Application.systemLanguage == SystemLanguage.Japanese) {
+        text =
+            "ゲームオーバー\n\n\n" +
+            score.ToString("#,##0") + " てん\n\n\n" +
+            GetRankName(rankNamesJapanese, score);
+    } else {
+        text =
+            "GAME OVER\n\n\n" +
+            "SCORE: " + score.ToString("#,##0") + "\n\n\n\n" +
+            "RANK\n\n" + GetRankName(rankNamesEnglish, score);
+    }
+    // Send the result to the leaderboard.
+    Social.ReportScore(score, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
+}
+
 function OnGameEnd() {
     enabled = true;
-    // ちょっと間を空ける。
+
     yield WaitForSeconds(1.0);
-    // 点数を取得し、表示用の文字列を決める。
-    var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
-    scoreText = score.ToString("#,##0");
-    rankName = GetRankName(score);
-    // リーダーボードへ点数を送信。
-    Social.ReportScore(score, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
-    // フェードイン。
+
     while (param < 1.0) {
         param = Mathf.Min(param + Timekeeper.delta * 6.0, 1.0);
         yield;
     }
-    // タップ待ち。
+
     while (!Input.GetButtonUp("Fire1")) yield;
-    // フェードアウト。
+
     while (param < 2.0) {
         param = Mathf.Min(param + Timekeeper.delta * 6.0, 2.0);
         yield;
     }
-    // ロード発行。
+
     Application.LoadLevel(1);
 }
 
 function OnGUI() {
-    if (scoreText == null) return;
     var sw = Screen.width;
     var sh = Screen.height;
     var scale = Config.GetUIScale();
-    // 黒塗り。
+    // Black overlay.
     GUI.color = Color(1, 1, 1, Mathf.Min(param * 0.75, 1.0));
     GUI.DrawTexture(Rect(0, 0, sw, sh), bgTexture);
-    // テキスト表示。
+    // Text display.
     GUI.skin = skin;
     GUI.color = Color(1, 1, 1, param > 1.0 ? 2.0 - param : param);
     GUIUtility.ScaleAroundPivot(Vector2(1.0 / scale, 1.0 / scale), Vector2.zero);
-    GUI.Label(Rect(0, sh * scale * 0.25, sw * scale, sh * scale * 0.5), "ゲームオーバー\n\n\n" + scoreText + " てん\n\n\n" + rankName);
+    GUI.Label(Rect(0, sh * scale * 0.1, sw * scale, sh * scale * 0.8), text);
 }
 
-// ランク定義
-private var rankNames : String[] = [
+private static function GetRankName(rankNameArray : String[], score : int) : String {
+    var maximum = 10000;
+    var rank = rankNameArray.Length * score / maximum;
+    return rankNameArray[Mathf.Min(rank, rankNameArray.Length - 1)];
+}
+
+private static var rankNamesJapanese : String[] = [
     "やまだ? じょうだんでしょ?",
     "まったく やまだ ではない",
     "やまだと なのるには およばず",
@@ -136,9 +148,44 @@ private var rankNames : String[] = [
     "やまだの なかの やまだ"
 ];
 
-// 点数からランク文字列を得る
-private function GetRankName(score : int) : String {
-    var maximum = 4000;
-    var rank = rankNames.Length * score / maximum;
-    return rankNames[Mathf.Min(rank, rankNames.Length - 1)];
-}
+private static var rankNamesEnglish : String[] = [
+    "NOT ENOUGH YAMADA",
+    "PRE-YAMADA",
+    "WORTHLESS YAMADA",
+    "SINGLE-CELLED YAMADA",
+    "YAMADA THE FOOL",
+    "YAMADA AS A MICROORGANISM",
+    "YAMADA FOUND IN DUMPSTER",
+    "PRIMAL YAMADA",
+    "PRIVATE YAMADA",
+    "PART-TIME YAMADA",
+    "HALF-POUND WEIGHTED YAMADA",
+    "CRUDE YAMADA",
+    "ONE OF YAMADA",
+    "GENERIC YAMADA",
+    "WELL-KNOWN YAMADA",
+    "TYPICAL YAMADA",
+    "NOVICE YAMADA",
+    "NORMAL YAMADA",
+    "DEFAULT YAMADA",
+    "GOOD YAMADA",
+    "SERGEANT YAMADA",
+    "MADDEN YAMADA",
+    "COOL YAMADA",
+    "BETTER YAMADA",
+    "LEADER YAMADA",
+    "FAMOUS YAMADA",
+    "IRON YAMADA",
+    "GENIUS YAMADA",
+    "CAPTAIN YAMADA",
+    "HANDSOME YAMADA",
+    "MAN OF YAMADA",
+    "MAJOR YAMADA",
+    "TOP YAMADA",
+    "PLATINUM YAMADA",
+    "CELEBRATED YAMADA",
+    "A YAMADA WORTH $10 MILLION",
+    "GENERAL YAMADA",
+    "YAMADA OF THE YEAR",
+    "THE YAMADA"
+];

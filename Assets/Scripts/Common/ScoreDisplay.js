@@ -26,11 +26,18 @@ function Awake() {
     numbers = new MeshFilter[8];
     for (i = 0; i < numbers.Length; i++) {
         numbers[i] = transform.Find(i.ToString()).GetComponent.<MeshFilter>();
+        numbers[i].mesh = null;
     }
 }
 
-function Start() {
+function OnGameStart() {
     SetValue(0);
+}
+
+function OnGameEnd() {
+    for (var filter in numbers) {
+        filter.mesh = null;
+    }
 }
 
 function SetValue(value : int) {

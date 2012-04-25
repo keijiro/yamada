@@ -360,6 +360,7 @@ Transform:
   m_Children:
   - {fileID: 25}
   - {fileID: 30}
+  - {fileID: 2024622763}
   - {fileID: 28}
   - {fileID: 21}
   m_Father: {fileID: 0}
@@ -9096,7 +9097,7 @@ Transform:
   - {fileID: 1937423858}
   - {fileID: 2047296844}
   - {fileID: 1628455215}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 26}
 --- !u!114 &2024622764
 MonoBehaviour:
   m_ObjectHideFlags: 0

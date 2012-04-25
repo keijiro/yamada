@@ -1,22 +1,27 @@
 #pragma strict
 
-// ポーズ画面の制御
-
 var skin : GUISkin;
 var black : Texture2D;
 
-private var scoreText : String;
+private var stringPaused : String;
+private var stringTapToResume : String;
 
-// ポーズ発動メッセージの受信
+function Awake() {
+    if (Application.systemLanguage == SystemLanguage.Japanese) {
+        stringPaused = "ポーズ ちゅう";
+        stringTapToResume = "タップで さいかい";
+    } else {
+        stringPaused = "PAUSED";
+        stringTapToResume = "TAP TO RESUME";
+    }
+}
+
 function PauseGame() {
     enabled = true;
-    var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
-    scoreText = score.ToString("#,##0");
 }
 
 function Update() {
     if (Input.GetButtonDown("Fire1")) {
-        // ポーズ解除操作
         SendMessage("ResumeGame");
         enabled = false;
     }
@@ -34,8 +39,8 @@ function OnGUI() {
     GUI.DrawTexture(Rect(0, 0, sw * scale, sh * scale), black);
 
     if (Time.time * 4.0 % 2 > 1.0) {
-        GUI.Label(Rect(0, 0, sw * scale, 0.5 * sh * scale), "ポーズ");
+        GUI.Label(Rect(0, 0, sw * scale, 0.5 * sh * scale), stringPaused);
     }
 
-    GUI.Label(Rect(0, sh * scale * 0.33, sw * scale, sh * scale * 0.67), "げんざい\n" + scoreText + " てん\n\n\nタップで さいかい");
+    GUI.Label(Rect(0, sh * scale * 0.5, sw * scale, sh * scale * 0.5), stringTapToResume);
 }
