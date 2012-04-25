@@ -138,8 +138,7 @@ private var rankNames : String[] = [
 
 // 点数からランク文字列を得る
 private function GetRankName(score : int) : String {
-    var hiLimit = 1000000;
-    var loLimit = 8000;
-    var rank = rankNames.Length * (score - loLimit) / (hiLimit - loLimit);
+    var maximum = 4000;
+    var rank = rankNames.Length * score / maximum;
     return rankNames[Mathf.Min(rank, rankNames.Length - 1)];
 }
