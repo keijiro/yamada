@@ -1,12 +1,17 @@
 #pragma strict
 
-var normalSpeed : float = 4.0;
-var acceleration : float = 1.0 / 60;
+var normalSpeed : float = 3.6;
+var acceleration : float = 0.01;
 
-function GetSpeed() : float{
+function GetSpeed() : float {
     return normalSpeed + acceleration * Timekeeper.elapsed;
 }
 
-function EnableSpeedEffects() {
-    particleSystem.enableEmission = true;
+function Update() {
+    var speed = GetSpeed();
+    if (speed > 4.0) {
+        particleSystem.enableEmission = true;
+        particleSystem.startSpeed = speed;
+        particleSystem.emissionRate = Mathf.Min((speed - 4.0) * 20.0, 25.0);
+    }
 }

@@ -33,7 +33,6 @@ function Update() {
     }
     // Synchronize the BGM with the generation phase.
     bgmPlayer.SetMixMode(phase);
-    if (phase > 3) scroller.EnableSpeedEffects();
     // Spawn DAs on the intervals (which controlled with the animations).
     leftToSpawn -= scroller.GetSpeed() * Timekeeper.delta;
     if (leftToSpawn < 0.0) {
