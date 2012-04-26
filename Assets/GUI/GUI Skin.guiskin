@@ -15,28 +15,28 @@ MonoBehaviour:
     m_Name: box
     m_Normal:
       m_Background: {fileID: 11001, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.800000, g: 0.800000, b: 0.800000, a: 1.000000}
+      m_TextColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 6
       m_Right: 6
@@ -62,10 +62,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -73,29 +73,29 @@ MonoBehaviour:
   m_button:
     m_Name: button
     m_Normal:
-      m_Background: {fileID: 11006, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.900000, g: 0.900000, b: 0.900000, a: 1.000000}
+      m_Background: {fileID: 2800000, guid: 28398bd12a4984f399fc5c2413b08d8a, type: 1}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Hover:
-      m_Background: {fileID: 11003, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_Background: {fileID: 2800000, guid: 28398bd12a4984f399fc5c2413b08d8a, type: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Active:
-      m_Background: {fileID: 11002, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.900000, g: 0.900000, b: 0.900000, a: 1.000000}
+      m_Background: {fileID: 2800000, guid: 3444e7a3ca23547f1918280d193b3490, type: 1}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11005, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.901961, g: 0.901961, b: 0.901961, a: 1.000000}
+      m_TextColor: {r: .901961029, g: .901961029, b: .901961029, a: 1}
     m_OnHover:
       m_Background: {fileID: 11004, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnActive:
       m_Background: {fileID: 11002, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.900000, g: 0.900000, b: 0.900000, a: 1.000000}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 6
       m_Right: 6
@@ -121,10 +121,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -133,28 +133,28 @@ MonoBehaviour:
     m_Name: toggle
     m_Normal:
       m_Background: {fileID: 11018, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.891129, g: 0.891129, b: 0.891129, a: 1.000000}
+      m_TextColor: {r: .891129017, g: .891129017, b: .891129017, a: 1}
     m_Hover:
       m_Background: {fileID: 11014, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Active:
       m_Background: {fileID: 11013, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11016, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.890196, g: 0.890196, b: 0.890196, a: 1.000000}
+      m_TextColor: {r: .890196025, g: .890196025, b: .890196025, a: 1}
     m_OnHover:
       m_Background: {fileID: 11015, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnActive:
       m_Background: {fileID: 11017, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 14
       m_Right: 0
@@ -180,10 +180,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -192,28 +192,28 @@ MonoBehaviour:
     m_Name: label
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.900000, g: 0.900000, b: 0.900000, a: 1.000000}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -239,10 +239,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_WordWrap: 1
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -251,28 +251,28 @@ MonoBehaviour:
     m_Name: textfield
     m_Normal:
       m_Background: {fileID: 11024, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.800000, g: 0.800000, b: 0.800000, a: 1.000000}
+      m_TextColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
     m_Hover:
       m_Background: {fileID: 11026, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.900000, g: 0.900000, b: 0.900000, a: 1.000000}
+      m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 11026, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11025, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 4
       m_Right: 4
@@ -298,10 +298,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -310,28 +310,28 @@ MonoBehaviour:
     m_Name: textarea
     m_Normal:
       m_Background: {fileID: 11024, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.901961, g: 0.901961, b: 0.901961, a: 1.000000}
+      m_TextColor: {r: .901961029, g: .901961029, b: .901961029, a: 1}
     m_Hover:
       m_Background: {fileID: 11026, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.800000, g: 0.800000, b: 0.800000, a: 1.000000}
+      m_TextColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11025, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 4
       m_Right: 4
@@ -357,10 +357,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 1
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -369,28 +369,28 @@ MonoBehaviour:
     m_Name: window
     m_Normal:
       m_Background: {fileID: 11023, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11022, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 8
       m_Right: 8
@@ -416,10 +416,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: -18.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: -18}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -428,28 +428,28 @@ MonoBehaviour:
     m_Name: horizontalslider
     m_Normal:
       m_Background: {fileID: 11009, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 3
       m_Right: 3
@@ -475,10 +475,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 12.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 12
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -487,28 +487,28 @@ MonoBehaviour:
     m_Name: horizontalsliderthumb
     m_Normal:
       m_Background: {fileID: 11011, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 11012, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 11010, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 4
       m_Right: 4
@@ -534,10 +534,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 12.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 12
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -546,28 +546,28 @@ MonoBehaviour:
     m_Name: verticalslider
     m_Normal:
       m_Background: {fileID: 11021, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -593,10 +593,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 0
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 12.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 12
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 0
@@ -605,28 +605,28 @@ MonoBehaviour:
     m_Name: verticalsliderthumb
     m_Normal:
       m_Background: {fileID: 11011, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 11012, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 11010, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -652,10 +652,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 12.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 12
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 0
@@ -664,28 +664,28 @@ MonoBehaviour:
     m_Name: horizontalscrollbar
     m_Normal:
       m_Background: {fileID: 11008, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 9
       m_Right: 9
@@ -711,10 +711,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 15.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 15
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -723,28 +723,28 @@ MonoBehaviour:
     m_Name: horizontalscrollbarthumb
     m_Normal:
       m_Background: {fileID: 11007, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 6
       m_Right: 6
@@ -770,10 +770,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 13.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 13
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -782,28 +782,28 @@ MonoBehaviour:
     m_Name: horizontalscrollbarleftbutton
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -829,10 +829,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -841,28 +841,28 @@ MonoBehaviour:
     m_Name: horizontalscrollbarrightbutton
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -888,10 +888,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -900,28 +900,28 @@ MonoBehaviour:
     m_Name: verticalscrollbar
     m_Normal:
       m_Background: {fileID: 11020, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -947,10 +947,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 15.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 15
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -959,28 +959,28 @@ MonoBehaviour:
     m_Name: verticalscrollbarthumb
     m_Normal:
       m_Background: {fileID: 11019, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 6
       m_Right: 6
@@ -1006,10 +1006,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 15.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 15
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 0
@@ -1018,28 +1018,28 @@ MonoBehaviour:
     m_Name: verticalscrollbarupbutton
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -1065,10 +1065,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -1077,28 +1077,28 @@ MonoBehaviour:
     m_Name: verticalscrollbardownbutton
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -1124,10 +1124,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -1136,28 +1136,28 @@ MonoBehaviour:
     m_Name: scrollview
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -1183,10 +1183,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_WordWrap: 0
     m_TextClipping: 1
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -1195,28 +1195,28 @@ MonoBehaviour:
   - m_Name: score
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.919368, g: 0.919368, b: 0.919368, a: 1.000000}
+      m_TextColor: {r: .919368029, g: .919368029, b: .919368029, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -1242,10 +1242,10 @@ MonoBehaviour:
     m_Alignment: 2
     m_WordWrap: 0
     m_TextClipping: 0
-    m_ContentOffset: {x: 0.000000, y: 0.000000}
-    m_ClipOffset: {x: 0.000000, y: 0.000000}
-    m_FixedWidth: 0.000000
-    m_FixedHeight: 0.000000
+    m_ContentOffset: {x: 0, y: 0}
+    m_ClipOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
     m_FontSize: 0
     m_FontStyle: 0
     m_StretchWidth: 1
@@ -1253,9 +1253,9 @@ MonoBehaviour:
   m_Settings:
     m_DoubleClickSelectsWord: 1
     m_TripleClickSelectsLine: 1
-    m_CursorColor: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
-    m_CursorFlashSpeed: -1.000000
-    m_SelectionColor: {r: 1.000000, g: 0.384039, b: 0.000000, a: 0.700000}
+    m_CursorColor: {r: 1, g: 1, b: 1, a: 1}
+    m_CursorFlashSpeed: -1
+    m_SelectionColor: {r: 1, g: .384039015, b: 0, a: .699999988}
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6

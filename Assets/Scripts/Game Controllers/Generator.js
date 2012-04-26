@@ -23,7 +23,6 @@ function OnGameStart() {
     enabled = true;
     animation.PlayQueued("GeneratorCurve1");
     animation.PlayQueued("GeneratorCurve2");
-    animation.PlayQueued("GeneratorCurve3");
 }
 
 function Update() {

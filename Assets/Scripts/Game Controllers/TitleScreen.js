@@ -18,7 +18,7 @@ function Awake() {
 function Update() {
     alpha = Mathf.Max(alpha - Timekeeper.delta * 4.0, 0.0);
 
-    if (Input.GetButtonUp("Fire1")) {
+    if (Input.GetMouseButtonDown(0) && Input.mousePosition.y < 0.8 * Screen.height) {
         // Broadcasts game starting message.
         GameObject.FindWithTag("Player").BroadcastMessage("OnGameStart");
         GameObject.FindWithTag("GameController").BroadcastMessage("OnGameStart");
@@ -33,6 +33,11 @@ function OnGUI() {
     var scale = Config.GetUIScale();
 
     GUI.skin = skin;
+
+    if (GUI.Button(Rect(0, 0, 0.15 * sw , 0.15 * sw), "LB")) {
+        Social.ShowLeaderboardUI();
+    }
+
     GUIUtility.ScaleAroundPivot(Vector2(1.0 / scale, 1.0 / scale), Vector2(0, 0));
     GUI.Label(Rect(0, sh * scale * 0.5, sw * scale, sh * scale * 0.5), stringTitle);
 
