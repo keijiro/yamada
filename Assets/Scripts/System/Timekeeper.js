@@ -10,6 +10,10 @@ function Awake() {
     elapsed = 0;
 }
 
+function OnGameStart() {
+    elapsed = 0;
+}
+
 function PauseGame() {
     paused = true;
 }
