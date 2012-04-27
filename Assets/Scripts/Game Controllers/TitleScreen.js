@@ -34,8 +34,10 @@ function OnGUI() {
 
     GUI.skin = skin;
 
-    if (GUI.Button(Rect(0, 0, 0.15 * sw , 0.15 * sw), "LB")) {
-        Social.ShowLeaderboardUI();
+    if (Social.localUser.authenticated) {
+        if (GUI.Button(Rect(4, 4, 0.1 * sw , 0.1 * sw), "", "leaderboard")) {
+            Social.ShowLeaderboardUI();
+        }
     }
 
     GUIUtility.ScaleAroundPivot(Vector2(1.0 / scale, 1.0 / scale), Vector2(0, 0));
