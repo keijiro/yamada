@@ -4,21 +4,26 @@ var skin : GUISkin;
 var bgTexture : Texture2D;
 
 private var param : float;
-private var text : String;
+private var screenText : String;
+private var shareText : String;
 
-function Start() {
+function InitializeTexts() {
     var score = (FindObjectOfType(Scorekeeper) as Scorekeeper).GetScore();
     // Make text.
     if (Application.systemLanguage == SystemLanguage.Japanese) {
-        text =
+        screenText =
             "ゲームオーバー\n\n\n" +
             score.ToString("#,##0") + " てん\n\n\n" +
             GetRankName(rankNamesJapanese, score);
+        shareText =
+            "#YamadaGame 評価「" + GetRankName(rankNamesJapanese, score) + "」";
     } else {
-        text =
+        screenText =
             "GAME OVER\n\n\n" +
             "SCORE: " + score.ToString("#,##0") + "\n\n\n\n" +
             "RANK\n\n" + GetRankName(rankNamesEnglish, score);
+        shareText =
+            "#YamadaGame Rank:'" + GetRankName(rankNamesEnglish, score) + "'";
     }
     // Send the result to the leaderboard.
     Social.ReportScore(score, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
@@ -29,12 +34,14 @@ function OnGameEnd() {
 
     yield WaitForSeconds(1.0);
 
+    InitializeTexts();
+
     while (param < 1.0) {
         param = Mathf.Min(param + Timekeeper.delta * 6.0, 1.0);
         yield;
     }
 
-    while (!Input.GetButtonUp("Fire1")) yield;
+    while (!Input.GetMouseButtonDown(0) || Input.mousePosition.y < 0.15 * Screen.height) yield;
 
     while (param < 2.0) {
         param = Mathf.Min(param + Timekeeper.delta * 6.0, 2.0);
@@ -45,17 +52,26 @@ function OnGameEnd() {
 }
 
 function OnGUI() {
+    if (param == 0.0) return;
+    
     var sw = Screen.width;
     var sh = Screen.height;
     var scale = Config.GetUIScale();
     // Black overlay.
     GUI.color = Color(1, 1, 1, Mathf.Min(param * 0.75, 1.0));
     GUI.DrawTexture(Rect(0, 0, sw, sh), bgTexture);
-    // Text display.
+
     GUI.skin = skin;
     GUI.color = Color(1, 1, 1, param > 1.0 ? 2.0 - param : param);
+    // Tweet button.
+    if (TwitterPlugin.IsAvailable()) {
+        if (GUI.Button(Rect(0.45 * sw, 0.9 * sh, 0.1 * sw, 0.1 * sw), "", "tweet")) {
+            TwitterPlugin.ComposeTweetWithScreenshot(shareText, "http://keijiro.github.com/yamada");
+        }
+    }
+    // Text display.
     GUIUtility.ScaleAroundPivot(Vector2(1.0 / scale, 1.0 / scale), Vector2.zero);
-    GUI.Label(Rect(0, sh * scale * 0.1, sw * scale, sh * scale * 0.8), text);
+    GUI.Label(Rect(0, sh * scale * 0.1, sw * scale, sh * scale * 0.8), screenText);
 }
 
 private static function GetRankName(rankNameArray : String[], score : float) : String {
