@@ -20,11 +20,11 @@ function GetScore() : int {
 }
 function AddScore(kind : String) {
     if (kind == "Grinding") {
-        score += 5;
+        score += 3;
     }
 }
 
 function Update() {
-    score += Timekeeper.delta * (3.0 + 0.1 * Timekeeper.elapsed);
+    score += Timekeeper.delta * (3.0 + 0.035 * Timekeeper.elapsed);
     display.SetValue(score);
 }

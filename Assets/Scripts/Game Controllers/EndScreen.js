@@ -58,9 +58,9 @@ function OnGUI() {
     GUI.Label(Rect(0, sh * scale * 0.1, sw * scale, sh * scale * 0.8), text);
 }
 
-private static function GetRankName(rankNameArray : String[], score : int) : String {
-    var maximum = 10000;
-    var rank = rankNameArray.Length * score / maximum;
+private static function GetRankName(rankNameArray : String[], score : float) : String {
+    var maximum = 10000.0;
+    var rank : int =  Mathf.Sqrt(score) / Mathf.Sqrt(maximum) * rankNameArray.Length;
     return rankNameArray[Mathf.Min(rank, rankNameArray.Length - 1)];
 }
 
