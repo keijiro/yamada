@@ -59,9 +59,10 @@ function OnGUI() {
 }
 
 private static function GetRankName(rankNameArray : String[], score : float) : String {
+    var minimum = 40.0;
     var maximum = 10000.0;
-    var rank : int =  Mathf.Sqrt(score) / Mathf.Sqrt(maximum) * rankNameArray.Length;
-    return rankNameArray[Mathf.Min(rank, rankNameArray.Length - 1)];
+    var rank : int =  Mathf.Sqrt(score - minimum) / Mathf.Sqrt(maximum - minimum) * rankNameArray.Length;
+    return rankNameArray[Mathf.Clamp(rank, 0, rankNameArray.Length - 1)];
 }
 
 private static var rankNamesJapanese : String[] = [
@@ -149,7 +150,7 @@ private static var rankNamesJapanese : String[] = [
 ];
 
 private static var rankNamesEnglish : String[] = [
-    "NOT ENOUGH YAMADA",
+    "NOT YAMADA",
     "PRE-YAMADA",
     "WORTHLESS YAMADA",
     "SINGLE-CELLED YAMADA",
@@ -159,7 +160,7 @@ private static var rankNamesEnglish : String[] = [
     "PRIMAL YAMADA",
     "PRIVATE YAMADA",
     "PART-TIME YAMADA",
-    "HALF-POUND WEIGHTED YAMADA",
+    "HALF-POUND PIECE OF YAMADA",
     "CRUDE YAMADA",
     "ONE OF YAMADA",
     "GENERIC YAMADA",
