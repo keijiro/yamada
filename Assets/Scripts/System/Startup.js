@@ -3,7 +3,9 @@
 var skin : GUISkin;
 
 function Start() {
+#if UNITY_IPHONE
     Social.localUser.Authenticate(function(result : boolean){});
+#endif
 
     // Set the fintering mode of the GUI font to point-sampling.
     //   (I know that this should be set in build time,
