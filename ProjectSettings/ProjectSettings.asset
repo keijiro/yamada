@@ -40,17 +40,18 @@ PlayerSettings:
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
   xboxEnableKinectAutoTracking: 0
+  xboxEnableSpeech: 0
   wiiHio2Usage: -1
   wiiLoadingScreenRectPlacement: 0
-  wiiLoadingScreenBackground: {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}
+  wiiLoadingScreenBackground: {r: 1, g: 1, b: 1, a: 1}
   wiiLoadingScreenPeriod: 1000
   wiiLoadingScreenFileName: 
   wiiLoadingScreenRect:
     serializedVersion: 2
-    x: 0.000000
-    y: 0.000000
-    width: 0.000000
-    height: 0.000000
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_SupportedAspectRatios:
     4:3: 1
     5:4: 1
@@ -81,7 +82,9 @@ PlayerSettings:
   iPhoneHighResSplashScreen: {fileID: 2800000, guid: 3550436069db14840b47b7a36aab3cc2,
     type: 1}
   iPadPortraitSplashScreen: {fileID: 0}
+  iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
+  iPadHighResLandscapeSplashScreen: {fileID: 0}
   AndroidTargetDevice: 0
   AndroidTargetGraphics: 1
   AndroidSplashScreenScale: 0
@@ -93,14 +96,6 @@ PlayerSettings:
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: f5c77fbec8bfd4b9b87c54ad03f50f34, type: 1}
       m_Size: 128
-  - m_BuildTarget: iPhone
-    m_Icons:
-    - m_Icon: {fileID: 2800000, guid: f5c77fbec8bfd4b9b87c54ad03f50f34, type: 1}
-      m_Size: 114
-    - m_Icon: {fileID: 0}
-      m_Size: 72
-    - m_Icon: {fileID: 2800000, guid: 63eefd994326444f0b6f6e3acb6cff57, type: 1}
-      m_Size: 57
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
@@ -123,6 +118,7 @@ PlayerSettings:
   XboxGenerateSpa: 0
   XboxDeployKinectResources: 0
   XboxSplashScreen: {fileID: 0}
+  xboxSpeechDB: 0
   ps3TitleConfigPath: 
   ps3DLCConfigPath: 
   ps3ThumbnailPath: 
@@ -130,7 +126,7 @@ PlayerSettings:
   ps3SoundPath: 
   ps3TrophyCommId: 
   ps3TrophyPackagePath: 
-  ps3PackagedResourcesPath: 
+  ps3ReservedMemorySizeMB: 2
   flashStrippingLevel: 2
   firstStreamedLevelWithResources: 0
   unityRebuildLibraryVersion: 9
