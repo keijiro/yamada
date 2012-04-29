@@ -9,13 +9,13 @@
 6. Open AppController.mm
 7. Comment out this code block.
 
-	/*
-	[_displayLink setPaused: YES];
-	
-	while (CFRunLoopRunInMode(kCFRunLoopDefaultMode, kInputProcessingTime, TRUE) == kCFRunLoopRunHandledSource)
-			;
-	
-	[_displayLink setPaused: NO];
-	*/
+    /*
+    [_displayLink setPaused: YES];
+    
+    while (CFRunLoopRunInMode(kCFRunLoopDefaultMode, kInputProcessingTime, TRUE) == kCFRunLoopRunHandledSource)
+            ;
+    
+    [_displayLink setPaused: NO];
+    */
 
 8. Ship it!
