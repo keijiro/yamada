@@ -1,5 +1,9 @@
 #pragma strict
 
+var scoreGrinding = 2.0;
+var scorePerSecond = 3.0;
+var spsAdd = 0.05;
+
 private var score : float;
 private var display : ScoreDisplay;
 
@@ -20,11 +24,11 @@ function GetScore() : int {
 }
 function AddScore(kind : String) {
     if (kind == "Grinding") {
-        score += 3;
+        score += scoreGrinding;
     }
 }
 
 function Update() {
-    score += Timekeeper.delta * (3.0 + 0.035 * Timekeeper.elapsed);
+    score += Timekeeper.delta * (scorePerSecond + spsAdd * Timekeeper.elapsed);
     display.SetValue(score);
 }

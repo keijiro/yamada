@@ -23,7 +23,7 @@ function Awake() {
         meshes[i] = mesh;
     }
     
-    numbers = new MeshFilter[8];
+    numbers = new MeshFilter[7];
     for (i = 0; i < numbers.Length; i++) {
         numbers[i] = transform.Find(i.ToString()).GetComponent.<MeshFilter>();
         numbers[i].mesh = null;

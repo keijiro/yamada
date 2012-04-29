@@ -52,11 +52,11 @@ function SpawnDa() : GameObject {
     var move = (phase < 4.0) ? Mathf.FloorToInt(phase) : Random.Range(0, 4);
 
     if (move == 1) {
-        da.GetComponent.<VerticalMove>().enabled = true;
-    } else if (move == 2) {
         da.GetComponent.<HorizontalMove>().enabled = true;
-    } else if (move == 3) {
+    } else if (move == 2) {
         da.GetComponent.<SpinnerMove>().enabled = true;
+    } else if (move == 3) {
+        da.GetComponent.<VerticalMove>().enabled = true;
     }
 
     return da;
