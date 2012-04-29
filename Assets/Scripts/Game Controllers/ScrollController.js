@@ -7,6 +7,10 @@ function GetSpeed() : float {
     return normalSpeed + acceleration * Timekeeper.elapsed;
 }
 
+function OnGameStart() {
+    enabled = true;
+}
+
 function Update() {
     var speed = GetSpeed();
     if (speed > 4.0) {
