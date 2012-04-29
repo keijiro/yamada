@@ -25,7 +25,7 @@ static function ComposeTweetWithScreenshot(initialText : String) {
 }
 
 static function ComposeTweetWithScreenshot(initialText : String, url : String) {
-    Application.CaptureScreenshot("screenshot.png");
+    Application.CaptureScreenshot("../Library/Caches/screenshot.png");
     var component = (new GameObject()).AddComponent.<TwitterPlugin>();
     component.initialText = initialText;
     component.url = url;
@@ -33,7 +33,7 @@ static function ComposeTweetWithScreenshot(initialText : String, url : String) {
 
 function Start() {
     yield;
-    _TwitterComposeTweet(initialText, url, Application.persistentDataPath + "/screenshot.png");
+    _TwitterComposeTweet(initialText, url, Application.temporaryCachePath + "/screenshot.png");
     Destroy(gameObject);
 }
 
