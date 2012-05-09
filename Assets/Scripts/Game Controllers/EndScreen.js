@@ -25,8 +25,13 @@ function InitializeTexts() {
         shareText =
             "#YamadaGame Rank:'" + GetRankName(rankNamesEnglish, score) + "'";
     }
-    // Send the result to the leaderboard.
-    Social.ReportScore(score, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
+    // Update the high score and send it to the leaderboard.
+    var highScore = PlayerPrefs.GetInt("highScore", 0);
+    if (score > highScore) {
+        highScore = score;
+        PlayerPrefs.SetInt("highScore", score);
+    }
+    Social.ReportScore(highScore, "jp.radiumsoftware.yamada.leaderboard.normalscore", function(result : boolean){});
 }
 
 function OnGameEnd() {
