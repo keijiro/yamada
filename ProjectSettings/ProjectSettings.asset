@@ -59,7 +59,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   iPhoneBundleIdentifier: jp.radiumsoftware.yamada
-  iPhoneBundleVersion: 1.1
+  iPhoneBundleVersion: 1.2
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 6
   AndroidPreferredInstallLocation: 1
