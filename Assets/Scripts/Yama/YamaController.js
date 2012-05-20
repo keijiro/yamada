@@ -4,6 +4,7 @@ var maxVelocity = 6.0;
 var sensibility = 15.0;
 var inputTrim = 0.4;
 var xRange = 1.5;
+var xLimit = 1.85;
 
 private var normalizedVelocity : float;
 private var gameStarted : boolean;
@@ -34,7 +35,8 @@ function Update() {
         normalizedVelocity = EaseOut(normalizedVelocity, input, -sensibility);
     }
     // Update the position with the velocity.
-    transform.localPosition.x += normalizedVelocity * maxVelocity * Timekeeper.delta;
+    var x = transform.localPosition.x + normalizedVelocity * maxVelocity * Timekeeper.delta;
+    transform.localPosition.x = Mathf.Clamp(x, -xLimit, xLimit);
     // Going down to the bottom of the screen while playing the game.
     if (gameStarted) transform.localPosition.y = EaseOut(transform.localPosition.y, -2.0, -0.4);
     // Yaw the body with the velocity.
